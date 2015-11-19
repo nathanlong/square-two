@@ -1,3 +1,3 @@
 <?php
 
-require_once( dirname( __FILE__ ) . '/lib/init.php' );
+require_once('lib/init.php');

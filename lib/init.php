@@ -1,5 +1,8 @@
 <?php
 
+// Basic setup: language, menus, post types
+// -----------------------------------------------------------------------------
+
 function s2_setup() {
   // Make theme available for translation
   load_theme_textdomain('square-two', get_template_directory() . '/lang');
@@ -25,3 +28,34 @@ function s2_setup() {
   add_theme_support('html5', array('caption'));
 }
 add_action('after_setup_theme', 's2_setup');
+
+// Add sidebars
+// -----------------------------------------------------------------------------
+
+function s2_widgets_init() {
+  register_sidebar(array(
+    'name'          => __('Primary', 'square-two'),
+    'id'            => 'sidebar-primary',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+
+  register_sidebar(array(
+    'name'          => __('Footer', 'square-two'),
+    'id'            => 'sidebar-footer',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+}
+add_action('widgets_init', 's2_widgets_init');
+
+// Initialize other options
+// -----------------------------------------------------------------------------
+
+require_once('scripts.php');
+require_once('nav.php');
+
