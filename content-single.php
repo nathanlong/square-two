@@ -14,7 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php s2_posted_on(); ?>
+			<?php // s2_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -29,7 +29,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php s2_entry_footer(); ?>
+		<?php // s2_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 
