@@ -21,6 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 <div id="page" class="site">
 
 <header class="banner navbar navbar-default navbar-static-top" role="banner">
@@ -44,5 +45,3 @@
     </nav>
   </div>
 </header>
-
-<div id="content" class="site-content">

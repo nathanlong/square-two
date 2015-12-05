@@ -15,7 +15,7 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php s2_posted_on(); ?>
+      <p>Meta</p>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -38,6 +38,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php s2_entry_footer(); ?>
+    <p>Article footer</p>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

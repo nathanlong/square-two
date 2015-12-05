@@ -11,8 +11,6 @@
 
 ?>
 
-	</div><!-- #content -->
-
 	<footer class="footer container" role="contentinfo">
     <p>Footer</p>
 	</footer><!-- #colophon -->

@@ -55,4 +55,8 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<?php if (s2_display_sidebar()) : ?>
+  <?php get_sidebar(); ?>
+<?php endif; ?>
+
 <?php get_footer(); ?>
