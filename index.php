@@ -14,8 +14,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="content" class="container">
+		<main id="main" class="main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -44,12 +44,15 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+	</div><!-- #content -->
 
-<?php get_sidebar(); ?>
+<?php if (s2_display_sidebar()) : ?>
+  <?php get_sidebar(); ?>
+<?php endif; ?>
+
 <?php get_footer(); ?>

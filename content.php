@@ -15,6 +15,7 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
+      <p>Meta</p>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -37,5 +38,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
+    <p>Article footer</p>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
