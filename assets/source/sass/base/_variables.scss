@@ -44,6 +44,7 @@ $secondary-accent: $green;
 
 // Typography assignments -- add new ones as necessary
 $link-color: $blue;
+$link-hover-color: darken($blue, 10%);
 $text-color: $charcoal;
 $header-color: $charcoal;
 
